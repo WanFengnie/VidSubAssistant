@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+.venv/
+venv/
+env/
+
+# PyInstaller
+build/
+dist/
+*.spec
+
+# Secrets & local config
+settings.json
+*.local.json
+.env
+.env.*
+
+# Local only
+STATE.md
+GITHUB_STATUS.md
+*.lnk
+test_video/
+src/cache/
+src/exports/
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Runtime outputs
+exports/
+**/jobs/
+**/srt_archive/
+*.log
+
+# Binaries / models (do not commit)
+ffmpeg.exe
+ffprobe.exe
+*.pt
+*.bin
+*.gguf
+
+# Test outputs
+test_assets/*_out.*
+
+test_video
+GITHUB_STATUS.md

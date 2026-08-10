@@ -1,0 +1,11 @@
+faster-whisper>=1.1.0
+customtkinter>=5.2.0
+httpx>=0.27.0
+windnd>=1.0.7
+# CUDA 12 runtime (ctranslate2 GPU needs cublas64_12 etc.)
+nvidia-cublas-cu12
+nvidia-cudnn-cu12
+nvidia-cuda-runtime-cu12
+nvidia-cuda-nvrtc-cu12
+# packaging (optional)
+pyinstaller>=6.0.0
