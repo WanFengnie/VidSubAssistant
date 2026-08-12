@@ -1,0 +1,13 @@
+# 核心依赖包（运行必需）
+faster-whisper>=1.1.0
+customtkinter>=5.2.0
+
+# GPU 推理加速（N 卡源码运行时建议安装，装好后无需再装 CUDA Toolkit 即可启用 GPU；
+# 非 N 卡机器装上也不会被调用，只是占用磁盘；不装则自动使用 CPU 运行）
+nvidia-cublas-cu12
+nvidia-cudnn-cu12
+nvidia-cuda-runtime-cu12
+nvidia-cuda-nvrtc-cu12
+
+# 打包工具（仅需要自行用 pack.bat / pack.ps1 打包 exe 时使用；pack.bat 也会自动补装）
+pyinstaller>=6.0.0

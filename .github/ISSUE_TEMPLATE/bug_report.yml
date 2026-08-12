@@ -1,0 +1,64 @@
+name: Bug 反馈
+description: 提交遇到的程序崩溃、识别/翻译报错或烧录问题
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: 📝 问题描述
+      description: 请详细说明遇到了什么问题
+      placeholder: 例如：使用 DeepL 翻译到第 30 句时突然报错...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: 💻 操作系统
+      options:
+        - Windows 11
+        - Windows 10
+        - 其他系统
+    validations:
+      required: true
+
+  - type: dropdown
+    id: ffmpeg
+    attributes:
+      label: 🎬 FFmpeg 状态
+      options:
+        - 已安装并配置环境变量
+        - 未安装 / 不确定
+    validations:
+      required: true
+
+  - type: dropdown
+    id: mode
+    attributes:
+      label: ⚡ 运行模式
+      options:
+        - NVIDIA GPU (CUDA 硬件加速)
+        - CPU 模式
+    validations:
+      required: true
+
+  - type: dropdown
+    id: stage
+    attributes:
+      label: ⚙️ 发生问题的阶段
+      options:
+        - 1. 软件启动 / 界面打不开
+        - 2. 音频提取阶段
+        - 3. Whisper 语音识别阶段
+        - 4. 字幕翻译阶段
+        - 5. 视频/硬字幕烧录导出阶段
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: 📋 报错日志或截图
+      description: 请粘贴控制台报错日志
+      render: shell

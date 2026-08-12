@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+.venv/
+venv/
+env/
+
+# Build & Packaging
+build/
+dist/
+*.spec
+
+# Local Config & Secrets
+Contents.md
+Plan.md
+settings.json
+src/settings.json
+*.local.json
+.env
+.env.*
+
+# Runtime Outputs & Cache
+exports/
+**/jobs/
+**/srt_archive/
+*.log
+*.lnk
+
+# Binaries & Model Weights
+ffmpeg.exe
+ffprobe.exe
+*.pt
+*.bin
+*.gguf
+
+# IDE & OS Files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini
